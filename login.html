@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="plugin/animate style/animate.min.css">
+
+</head>
+
+<body>
+    <main class="form-main-section d-flex justify-content-center align-item-center">
+
+        <section class="login-form">
+
+            <div class="form m-auto p-30 round-8 animate__animated animate__slideInLeft">
+                <div class="text-center">
+                    <div class="logo m-auto">
+                        <a href="index.html"><img src="img/Primary.png" alt=""></a>
+                    </div>
+
+                    <h2 class="py-10">ចូលគណនី</h2>
+                </div>
+                <form action="">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group relative" style="padding-top: 18px; padding-bottom: 12px;">
+                                <input type="tel" name="pnumber" class="form-control" placeholder="លេខទូរស័ព្ទ"
+                                    required>
+                                <label for="pnumber" class="form-label absolute top-0 left-10">លេខទូរស័ព្ទ <span
+                                        class="asterisk">*</span></label>
+                                <img src="img/form-img/telephone.png" alt="" class="absolute">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group relative" style="padding-top: 18px; padding-bottom: 12px;">
+                                <input type="password" id="password" name="txtpassword" class="form-control"
+                                    placeholder="ពាក្យសម្ងាត់" required>
+                                <label for="txtpassword" class="form-label absolute top-0 left-10">ពាក្យសម្ងាត់ <span
+                                        class="asterisk">*</span></label>
+                                <img src="img/form-img/lock.png" alt="" class="absolute">
+                                <div id="password-icon" onclick="showHide()"></div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group d-flex space-btw">
+                                <span>
+                                    <input type="checkbox" class="check-box pl-10">
+                                    <label for="">ចងចាំគណនីខ្ញុំ</label>
+                                </span>
+                                <span><a href="forgot_password.html"
+                                        class="forgot-password">ភ្លេចពាក្យសម្ងាត់</a></span>
+                            </div>
+                        </div>
+                        <div class="col-12 py-10">
+                            <div class="form-group btn-login">
+                                <a href="index_1.html"
+                                    class="d-flex justify-content-center align-item-center">ចូលគណនី</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="col-12 py-20 px-10">
+                    <div class="separator relative">
+                        <div class="absolute">រឺចូលជាមួយ</div>
+                    </div>
+                    <button type="button" class="social-media-btn relative">
+                        <a href="index_1.html">
+                            <div><img src="img/social-media/googlee.png" alt="" class="absolute" style="left: 115px;">
+                            </div>
+                            <div>
+                                <p class="text-center">Google</p>
+                            </div>
+                        </a>
+                    </button>
+                    <button type="button" class="social-media-btn relative">
+                        <a href="index_1.html">
+                            <div><img src="img/social-media/facebookk.png" alt="" class="absolute" style="left: 114px;">
+                            </div>
+                            <div>
+                                <p class="text-center">Facebook</p>
+                            </div>
+                        </a>
+                    </button>
+
+                    <div class="create-account d-flex justify-content-center align-item-center py-10">
+                        <a href="signup.html">បង្កើតគណនី</a>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script>
+        let password = document.getElementById('password');
+        let icon = document.getElementById('password-icon');
+
+
+        function showHide() {
+            if (password.type === 'password') {
+                password.setAttribute('type', 'text');
+                icon.classList.add('hide');
+            } else {
+                password.setAttribute('type', 'password');
+                icon.classList.remove('hide');
+            }
+        }
+
+    </script>
+</body>
+
+</html>

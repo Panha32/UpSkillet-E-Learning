@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="plugin/animate style/animate.min.css">
+
+</head>
+
+<body>
+
+    <main class="form-main-section d-flex justify-content-center align-item-center">
+        <section class="signup-form">
+            <div class="container">
+                <div class="form m-auto p-30 round-8 animate__animated animate__slideInLeft">
+                    <div class="text-center">
+                        <div class="logo m-auto">
+                            <a href="index.html"><img src="img/Primary.png" alt=""></a>
+                        </div>
+                        <h2 class="pt-18">បង្កើតគណនី</h2>
+                    </div>
+                    <div class="step py-20 pl-10">
+                        <div class="circle">1</div>
+                        <div class="circle">2</div>
+                        <div class="circle">3</div>
+                        <div class="progress-bar">
+                            <div class="indicator"></div>
+                        </div>
+                    </div>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group relative" style="padding-top: 18px; padding-bottom: 12px;">
+                                    <input type="tel" name="pnumber" class="form-control" placeholder="លេខទូរស័ព្ទ"
+                                        required>
+                                    <label for="pnumber" class="form-label absolute top-0 left-10">លេខទូរស័ព្ទ <span
+                                            class="asterisk">*</span></label>
+                                    <img src="img/form-img/telephone.png" alt="" class="absolute">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group relative" style="padding-top: 18px; padding-bottom: 12px;">
+                                    <input type="password" id="password1" name="txtpassword" class="form-control"
+                                        placeholder="ពាក្យសម្ងាត់" required>
+                                    <label for="txtpassword" class="form-label absolute top-0 left-10">ពាក្យសម្ងាត់
+                                        <span class="asterisk">*</span></label>
+                                    <img src="img/form-img/lock.png" alt="" class="absolute">
+                                    <div id="password-icon1" onclick="showHide1()"></div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group relative" style="padding-top: 18px; padding-bottom: 12px;">
+
+                                    <input type="password" id="password2" name="txtpassword" class="form-control"
+                                        placeholder="ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់" required>
+                                    <label for="txtpassword"
+                                        class="form-label absolute top-0 left-10">ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់ <span
+                                            class="asterisk">*</span></label>
+                                    <img src="img/form-img/lock.png" alt="" class="absolute">
+                                    <div id="password-icon2" onclick="showHide2()"></div>
+                                </div>
+                            </div>
+                            <div class="col-12 py-10">
+                                <span>
+                                    <input type="checkbox" class="check-box" style="margin-left: 10px;">
+                                    <label for="">ខ្ញុំបានអាននិងយល់ព្រមលើ <a href="#" style="color: #2665bd;"
+                                            class="fw-500">លក្ខខណ្ឌ</a></label>
+                                </span>
+                                <div class="form-group btn-login" style="margin-top: 10px;">
+                                    <a href="signup-verify-code.html">បន្ទាប់</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="col-12 py-20 px-10">
+                        <div class="separator relative">
+                            <div class="absolute">រឺចុះឈ្មោះជាមួយ</div>
+                        </div>
+                        <button type="button" class="social-media-btn relative">
+                            <a href="index_1.html">
+                                <div><img src="img/social-media/googlee.png" alt="" class="absolute"
+                                        style="left: 115px;"></div>
+                                <div>
+                                    <p class="text-center">Google</p>
+                                </div>
+                            </a>
+                        </button>
+                        <button type="button" class="social-media-btn relative">
+                            <a href="index_1.html">
+                                <div><img src="img/social-media/facebookk.png" alt="" class="absolute"
+                                        style="left: 114px;"></div>
+                                <div>
+                                    <p class="text-center">Facebook</p>
+                                </div>
+                            </a>
+                        </button>
+                        <div class="create-account d-flex justify-content-center align-item-center py-10">
+                            <a href="login.html">ចូលគណនី</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/d296b4f826.js"></script>
+    <script>
+
+        let password1 = document.getElementById('password1');
+        let icon1 = document.getElementById('password-icon1');
+        let password2 = document.getElementById('password2');
+        let icon2 = document.getElementById('password-icon2');
+
+        function showHide1() {
+            if (password1.type === 'password') {
+                password1.setAttribute('type', 'text');
+                icon1.classList.add('hide');
+            } else {
+                password1.setAttribute('type', 'password');
+                icon1.classList.remove('hide');
+            }
+        }
+
+
+        function showHide2() {
+            if (password2.type === 'password') {
+                password2.setAttribute('type', 'text');
+                icon2.classList.add('hide');
+            } else {
+                password2.setAttribute('type', 'password');
+                icon2.classList.remove('hide');
+            }
+        }
+
+    </script>
+</body>
+
+</html>

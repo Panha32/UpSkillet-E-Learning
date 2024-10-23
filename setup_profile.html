@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setup Profile</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="plugin/animate style/animate.min.css">
+
+</head>
+
+<body>
+
+  <main class="form-main-section d-flex justify-content-center align-item-center">
+    <section class="signup-form setup-profile animate__animated animate__fadeIn">
+      <div class="container">
+        <div class="row">
+          <div class="col-5 m-auto">
+            <div class="form m-auto p-30 round-8">
+              <div class="text-center">
+                <div class="logo m-auto">
+                  <a href="index.html"><img src="img/Primary.png" alt=""></a>
+                </div>
+                <h2 class="pt-18">បំពេញព័ត៌មានផ្ទាល់ខ្លួន</h2>
+              </div>
+              <div class="step py-20 pl-10">
+                <div class="circle">1</div>
+                <div class="circle">2</div>
+                <div class="circle">3</div>
+                <div class="progress-bar">
+                  <div class="indicator"></div>
+                </div>
+              </div>
+              <div class="profile">
+                <div class="upload-picture m-auto relative">
+                  <div class="picture">
+                    <img src="img/form-img/blank_profile.png" alt="">
+                  </div>
+                  <a href="#" class="browse-picture absolute">
+                    <img src="img/form-img/camera-img.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <form action="">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="fname" class="form-label">នាមត្រកូល <span class="asterisk">*</span></label>
+                      <input type="text" name="fname" class="form-control" placeholder="នាមត្រកូល" required>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="lname" class="form-label">នាមខ្លួន <span class="asterisk">*</span></label>
+                      <input type="text" name="lname" class="form-control" placeholder="នាមខ្លួន" required>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="email" class="form-label">អុីម៉ែល <span class="asterisk">*</span></label>
+                      <input type="text" name="email" class="form-control" placeholder="អុីម៉ែល" required>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="form-group">
+                      <label for="birthdate" class="form-label">ថ្ងៃខែឆ្នាំកំណើត <span class="asterisk">*</span></label>
+                      <input type="date" name="birthdate" class="form-control" placeholder="ថ្ងៃខែឆ្នាំកំណើត">
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="form-group">
+                      <label for="gender" class="form-label">ភេទ <span class="asterisk">*</span></label>
+                      <input type="text" name="gender" class="form-control" placeholder="ភេទ" required>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="nationality" class="form-label">សញ្ជាតិ </label>
+                      <input type="text" name="nationality" class="form-control" placeholder="សញ្ជាតិ">
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="address" class="form-label">អាស័យដ្ឋានបច្ចុប្បន្ន</label>
+                      <input type="text" name="address" class="form-control" placeholder="អាស័យដ្ឋានបច្ចុប្បន្ន">
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="form-group">
+                      <label for="role" class="form-label">តួនាទី <span class="asterisk">*</span></label>
+                      <input type="text" name="role" class="form-control" placeholder="តួនាទី" required>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="form-group">
+                      <label for="organization" class="form-label">ស្ថាប័ន</label>
+                      <input type="text" name="organization" class="form-control" placeholder="ស្ថាប័ន">
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="form-group">
+                      <label for="major" class="form-label">ជំនាញ</label>
+                      <input type="text" name="major" class="form-control" placeholder="ជំនាញ">
+                    </div>
+                  </div>
+
+                  <div class="col-12 py-10">
+                    <div class="form-group btn-login" style="margin-top: 10px;">
+                      <a href="index_1.html" class="d-flex justify-content-center align-item-center">រួចរាល់<i
+                          class="fa-solid fa-circle-check pl-10"></i></a>
+                    </div>
+                  </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://kit.fontawesome.com/d296b4f826.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom-select.complete.min.js"></script>
+  <script>
+    new TomSelect("#select-beast-6", {
+      create: true,
+      sortField: {
+        field: "text",
+        direction: "asc",
+      },
+    });
+  </script>
+</body>
+
+</html>
